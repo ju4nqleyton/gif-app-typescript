@@ -42,6 +42,7 @@ function printData(data) {
     data.forEach((gif) => {
         const img = document.createElement('img');
         img.src = gif.images.fixed_height.url;
+        img.className = 'gif-item';
         gifContainer.appendChild(img);
     });
 }
